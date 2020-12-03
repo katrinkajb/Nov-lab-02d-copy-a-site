@@ -1,0 +1,97 @@
+* {box-sizing: border-box;
+}
+
+body, html {
+    background-color: #96A8C8;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    display: flex;
+    justify-content: center;
+}
+    
+main {
+    display: grid;
+    grid-gap: 5px;
+    height: 100%;
+    width: 780px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 4fr 7fr 13fr;
+}
+
+header {
+    font-weight: 900;
+    grid-template-columns: 2fr 3fr;
+    display: grid;
+    padding-left: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 3 / 3;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.white-box {
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+.sidebar {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-weight: 900;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+}
+
+.byline {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    padding-top: 20px;
+    font-size: larger;
+}
+
+.comic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.buttons {
+    background-color:#6E7B91;
+	color: #FFF;
+    border: 1.5px solid #333;
+    display: inline;
+    font-weight: 600;
+	padding: 5px;
+	margin: 0 4px;
+	text-decoration: none;
+    border-radius: 5px;   
+}
+
+.footnote {
+    font-size: xx-small;
+    font-style: italic;
+    justify-content: center;
+}
+
+.bluetext {
+    color: #96A8C8;
+}
